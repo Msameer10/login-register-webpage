@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Register Page</title>
+	<meta charset="utf-8" lang="en">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="mn">
+	<div class="form-box">
+		<div class="btn-box">
+			<div id="btn"></div>
+			<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+			<button type="button" class="toggle-btn" onclick="register()">Register</button>
+		</div>
+		<div class="social-icons">
+			<img src="images/fb-icon.png" alt="facebook">
+			<img src="images/google-icon.png" alt="google">
+		</div>
+
+		<form id="Log-in" class="input-grp">
+			<input type="text" class="input-field" placeholder="Enter Username" name="input-grp" required>
+			<input type="Password" class="input-field" placeholder="Enter Password" name="input-grp" required>
+			<input type="checkbox" name="input-grp" class="checkbox"><span>Remember Me</span>
+			<button type="submit" class="submit-btn">Log In</button>
+
+		</form>
+
+		<form id="Register" class="input-grp">
+			<input type="text" class="input-field" placeholder="Enter Username" name="input-grp" required>
+			<input type="email" class="input-field" placeholder="Enter Email ID" name="input-grp" required>
+			<input type="Password" class="input-field" placeholder="Enter Password" name="input-grp" required>
+			<input type="Password" class="input-field" placeholder="Re-Enter Password" name="input-grp" required>
+			<input type="checkbox" name="input-grp" class="checkbox"><span>I agree to the <a href="#">Terms and Conditions</a></span>
+			<button type="submit" class="submit-btn">Submit</button>
+
+		</form>
+
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+	var x = document.getElementById("Log-in");
+	var y = document.getElementById("Register");
+	var z = document.getElementById("btn")
+
+	function register() {
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+
+	function login() {
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0px";
+	}
+
+</script>
+
+</html>
